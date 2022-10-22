@@ -1,13 +1,13 @@
 import Box from "@mui/material/Box";
 import LinearProgress from "@mui/material/LinearProgress";
-import "./Skills.scss";
+import "./Experience.scss";
 import Grid from "@mui/material/Grid"; // Grid version 1
 
-export default function Skills() {
+export default function Experience() {
   return (
-    <Box className="skills-container">
+    <Box className="experience-container">
       <section className="content">
-        <h2>Skills</h2>
+        <h2>Experience</h2>
         <Grid container spacing={4}>
           <Grid className="skill" item xs={6}>
             <h3>JavaScript</h3>

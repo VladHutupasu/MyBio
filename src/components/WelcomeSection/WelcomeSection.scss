@@ -1,13 +1,18 @@
-section {
-  height: 100vh;
-  max-width: 540px;
-  margin: 0 auto;
+.welcome-container {
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  section {
+    height: 100vh;
+    margin: 0 auto;
+    max-width: 540px;
 
-  border-bottom: solid 1px $text-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+
+
+  border-bottom: solid 1px #444444;
 
   h2 {
     margin: 0;
