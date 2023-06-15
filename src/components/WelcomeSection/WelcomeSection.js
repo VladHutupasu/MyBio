@@ -11,12 +11,12 @@ const buttonStyle = {
 
 export default function WelcomeSection() {
   return (
-    <Box className="welcome-container">
+    <Box className="welcome-container" id="home">
       <section>
-        <h2>Hello,</h2>
+        <h2>Hello 👋🏻</h2>
         <p>
-          My name is Vlad and I am 25 years old. I am an ambitious and
-          hard-working person that came in The Netherlands 7 years ago in order
+          My name is Vlad and I am 26 years old. I am an ambitious and
+          hard-working person that came in The Netherlands 8 years ago in order
           to study Computer Science. I came here, not being totally supported by
           my parents, to learn, develop myself and take on challenges and
           opportunities. Being determined, I managed to create a life of my own,
@@ -29,10 +29,10 @@ export default function WelcomeSection() {
           my mind into.
         </p>
         <div>
-          <Button variant="contained" size="large" sx={buttonStyle}>
+          <Button variant="contained" size="large" sx={buttonStyle} href="https://www.linkedin.com/in/vlad-hutupasu/" target="_blank">
             Portfolio
           </Button>
-          <Button variant="outlined" size="large" sx={buttonStyle}>
+          <Button variant="outlined" size="large" sx={buttonStyle} href="https://www.linkedin.com/in/vlad-hutupasu/" target="_blank">
             Hire me
           </Button>
         </div>

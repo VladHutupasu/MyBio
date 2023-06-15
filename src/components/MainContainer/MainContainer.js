@@ -1,17 +1,18 @@
 import Box from "@mui/material/Box";
 import Experience from "../Experience/Experience";
+import FunFacts from "../FunFacts/FunFacts";
 import Skills from "../Skills/Skills";
 import WelcomeSection from "../WelcomeSection/WelcomeSection";
 import "./MainContainer.scss";
 
-export default function MainContainer(props) {
-  const drawerWidth = props.drawerWidth;
+export default function MainContainer() {
 
   return (
-    <Box style={{ marginLeft: drawerWidth }}>
+    <Box className="main-container">
       <WelcomeSection />
       <Skills />
       <Experience />
+      <FunFacts />
     </Box>
   );
 }

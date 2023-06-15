@@ -7,7 +7,7 @@ export default function FaceAvatar() {
       alt="Vlad Hutupasu"
       src={profilePicture}
       sx={{ width: 140, height: 140 }}
-      style={{ margin: "0 auto"}}
+      style={{ margin: "20px 0 0 20px"}}
     />
   );
 }

@@ -1,31 +1,64 @@
 .sidenav {
-  height: 100%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
+  width: $sidenav-offset;
   background-color: $container-color;
+  position: fixed;
+  left: 0;
+  overflow-y: auto;
   overflow-x: hidden;
-  padding-top: 20px;
-}
+  height: 100vh;
+  min-height: 100vh;
+  top: 0;
+  z-index: 1;
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 
-.sidenav a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 25px;
-  color: $text-color;
-  display: block;
-}
-
-.sidenav a:hover {
-  color: $dark-blue;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {
-    padding-top: 15px;
+  h2 {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 24px;
+    margin-left: 20px;
   }
-  .sidenav a {
-    font-size: 18px;
+
+  nav {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 20px;
+  }
+
+  a {
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    color: $text-color;
+    text-transform: uppercase;
+    text-decoration: none;
+    // padding: 6px 8px 6px 16px;
+    position: relative;
+    padding-bottom: 20px;
+
+  }
+
+  a.active::before {
+    content: "";
+    position: absolute;
+    left: 7%;
+    bottom: 16px;
+    width: 150px;
+    height: 14px;
+    transform: skew(-12deg) translateX(-50%);
+    background: $dark-blue;
+    z-index: -1;
+  }
+
+  @media (max-width: 950px) {
+    visibility: hidden;
   }
 }
