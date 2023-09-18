@@ -15,7 +15,7 @@
     }
   }
 
-  border-bottom: solid 1px #444444;
+  border-bottom: dashed 2px $light-blue;
 
   h2 {
     margin: 0;
@@ -47,7 +47,7 @@
   }
 
   .mouse {
-    border: solid 3px $container-color;
+    border: solid 3px $light-blue;
     border-radius: 16px;
     display: block;
     margin: auto;
@@ -55,7 +55,7 @@
     position: relative;
     width: 25px;
     .wheel {
-      background: $container-color;
+      background: $light-blue;
       border-radius: 100%;
       display: block;
       position: absolute;

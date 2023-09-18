@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import { useLocation } from "react-router-dom";
 import FaceAvatar from "../FaceAvatar/FaceAvatar";
 import "./Sidenav.scss";
 
@@ -22,43 +23,48 @@ const navItems = [
 ];
 
 export default function Sidenav() {
+  const location = useLocation();
   const myRef = useRef();
-  const [active, setActive] = useState(navItems[0].id);
+  const [active, setActive] = useState('');
 
   useEffect(() => {
+    const observer = new IntersectionObserver(handleScroll, {
+      root: null,
+      rootMargin: "0px 0px -20% 0px",
+      threshold: 0.4,
+    });
+    const sections = document.querySelectorAll(".main-section");
+    sections.forEach((section) => {
+      observer.observe(section);
+    });
 
-    const url = window.location.href;
-    const hashIndex = url.lastIndexOf("#");
-    if (hashIndex > 0) {
-      const id = url.substring(hashIndex + 1);
-      scrollToId(id);
-    }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    return () => {
+      observer.disconnect();
+    };
   }, []);
 
-  function scrollToId(id) {
-    if (!id || navItems.filter((el) => el.id === id).length !== 1) {
-      document.getElementById(active).scrollIntoView({
-        block: "nearest",
-        inline: "center",
-        behavior: "smooth",
-        alignToTop: false,
-      });
-      setActive(active);
-    } else {
-      document.getElementById(id).scrollIntoView({
-        block: "nearest",
-        inline: "center",
-        behavior: "smooth",
-        alignToTop: false,
-      });
-      setActive(id);
+  useEffect(() => {
+    const hash = location.hash;
+    if (hash) {
+      setTimeout(() => {
+      const element = document.querySelector(hash);
+      if (element) {
+        element.scrollIntoView({
+          block: "start",
+          behavior: "smooth",
+        });
+      }
+    }, 100);
     }
-  }
+  }, [location.hash]);
 
-  function handleClick(e, id) {
-    e.stopPropagation();
-    setActive(id);
+  function handleScroll(entries) {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        console.log(entry.target.id);
+        setActive(entry.target.id);
+      }
+    });
   }
 
   return (
@@ -72,7 +78,6 @@ export default function Sidenav() {
               href={"#" + navItem.id}
               key={navItem.id}
               className={navItem.id === active ? "active" : ""}
-              onClick={(e) => handleClick(e, navItem.id)}
             >
               {navItem.name}
             </a>

@@ -1,7 +1,12 @@
 .sidenav {
   width: $sidenav-offset;
-  background-color: $container-color;
+  background-color: $background-color;
   position: fixed;
+
+  border-right: 2px dashed $light-blue;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+
   left: 0;
   overflow-y: auto;
   overflow-x: hidden;
@@ -54,7 +59,7 @@
     width: 150px;
     height: 14px;
     transform: skew(-12deg) translateX(-50%);
-    background: $dark-blue;
+    background: $light-blue;
     z-index: -1;
   }
 

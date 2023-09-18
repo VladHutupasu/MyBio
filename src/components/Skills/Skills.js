@@ -5,7 +5,7 @@ import Grid from "@mui/material/Grid"; // Grid version 1
 
 export default function Skills() {
   return (
-    <Box className="skills-container" id="skills">
+    <Box className="skills-container main-section" id="skills">
       <section className="content">
         <h2>Skills</h2>
         <Grid container spacing={4}>

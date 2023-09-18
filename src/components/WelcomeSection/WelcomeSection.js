@@ -11,7 +11,7 @@ const buttonStyle = {
 
 export default function WelcomeSection() {
   return (
-    <Box className="welcome-container" id="home">
+    <Box className="welcome-container main-section" id="home">
       <section>
         <h2>Hello 👋🏻</h2>
         <p>
@@ -29,7 +29,7 @@ export default function WelcomeSection() {
           my mind into.
         </p>
         <div>
-          <Button variant="contained" size="large" sx={buttonStyle} href="https://www.linkedin.com/in/vlad-hutupasu/" target="_blank">
+          <Button variant="contained" size="large" sx={buttonStyle} href="https://vladhutupasu.tiiny.site/" target="_blank">
             Portfolio
           </Button>
           <Button variant="outlined" size="large" sx={buttonStyle} href="https://www.linkedin.com/in/vlad-hutupasu/" target="_blank">

@@ -5,7 +5,7 @@ export default function FunFacts() {
   const iconSize = "40px";
 
   return (
-    <Box className="fun-facts-container" id="fun-facts">
+    <Box className="fun-facts-container main-section" id="fun-facts">
       <section className="content">
         <h2>Fun Facts</h2>
         <section className="fun-facts">

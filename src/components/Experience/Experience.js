@@ -3,7 +3,7 @@ import "./Experience.scss";
 
 export default function Experience() {
   return (
-    <Box className="experience-container" id="experience">
+    <Box className="experience-container main-section" id="experience">
       <section className="content">
         <h2>Experience</h2>
         <div className="timeline">
@@ -29,8 +29,12 @@ export default function Experience() {
             Full Stack Developer @ <a href="https://www.lynx.nl" target="_blank" rel="noreferrer" style={{color: "#02c878"}}>LYNX B.V.</a>
           </p>
           <p>
-            <span>💼 2021 - ...</span>
+            <span>💼 2021 - 2023</span>
             Front-end Developer @ <a href="https://www.rabobank.nl" target="_blank" rel="noreferrer" style={{color: "#fa6705"}}>Rabobank</a>
+          </p>
+          <p>
+            <span>2023 - ... 💼</span>
+            Full-Stack Area Developer @ <a href="https://www.rabobank.nl" target="_blank" rel="noreferrer" style={{color: "#fa6705"}}>Rabobank</a>
           </p>
         </div>
       </section>
