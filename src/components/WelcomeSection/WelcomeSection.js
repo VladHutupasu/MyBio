@@ -13,26 +13,38 @@ export default function WelcomeSection() {
   return (
     <Box className="welcome-container main-section" id="home">
       <section>
-        <h2>Hello 👋🏻</h2>
+        <h2>
+          Hello
+          <span className="wave-animation">👋🏻</span>
+        </h2>
         <p>
-          My name is Vlad and I am 26 years old. I am an ambitious and
-          hard-working person that came in The Netherlands 8 years ago in order
-          to study Computer Science. I came here, not being totally supported by
-          my parents, to learn, develop myself and take on challenges and
-          opportunities. Being determined, I managed to create a life of my own,
-          even though in the beginning it was not easy.
+          My name is Vlad and I am 27 years old. I am an ambitious &
+          hard-working individual who journeyed to The Netherlands 9 years ago
+          to study Computer Science. Despite initial obstacles, I've forged my
+          own path, embracing learning, growth, and seizing opportunities.
         </p>
         <p>
-          Always ready to learn something new, something useful, to gain
-          experience and knowledge. I may not know everything, but I can tell
-          you that I am hard-working and I can accomplish everything that I put
-          my mind into.
+          I may not have all the answers, but I am eager to learn and tackle any
+          challenge that comes my way. My determination and work ethic ensures I
+          conquer anything I set my mind to.
         </p>
         <div>
-          <Button variant="contained" size="large" sx={buttonStyle} href="https://vladhutupasu.tiiny.site/" target="_blank">
+          <Button
+            variant="contained"
+            size="large"
+            sx={buttonStyle}
+            href="https://vladhutupasu.tiiny.site/"
+            target="_blank"
+          >
             Portfolio
           </Button>
-          <Button variant="outlined" size="large" sx={buttonStyle} href="https://www.linkedin.com/in/vlad-hutupasu/" target="_blank">
+          <Button
+            variant="outlined"
+            size="large"
+            sx={buttonStyle}
+            href="https://www.linkedin.com/in/vlad-hutupasu/"
+            target="_blank"
+          >
             Hire me
           </Button>
         </div>

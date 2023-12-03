@@ -1,13 +1,18 @@
-import Avatar from "@mui/material/Avatar";
-import profilePicture from "../../assets/images/me.jpeg";
+import profilePicture from "../../assets/images/me.jpg";
 
 export default function FaceAvatar() {
   return (
-    <Avatar
+    <img
       alt="Vlad Hutupasu"
       src={profilePicture}
-      sx={{ width: 140, height: 140 }}
-      style={{ margin: "20px 0 0 20px"}}
-    />
+      style={{
+        width: 210,
+        height: 210,
+        marginTop: "20px",
+        objectFit: "cover",
+        objectPosition: "top",
+        borderRadius: "50%",
+      }}
+    ></img>
   );
 }

@@ -1,6 +1,10 @@
 .sidenav {
+  display: flex;
+  flex-direction: column;
+
   width: $sidenav-offset;
   background-color: $background-color;
+  padding-left: 20px;
   position: fixed;
 
   border-right: 2px dashed $light-blue;
@@ -27,40 +31,60 @@
     text-transform: uppercase;
     font-weight: 900;
     font-size: 24px;
-    margin-left: 20px;
   }
 
-  nav {
-    margin-top: 100px;
-    display: flex;
+  p {
+    font-weight: 500;
+    a {
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+  }
+
+  .nav-items {
+    margin-top: 40px;
+    display: inline-flex;
     flex-direction: column;
     gap: 10px;
-    padding-left: 20px;
+    margin-left: 0px;
+
+    a {
+      font-size: 14px;
+      font-weight: 700;
+      color: $text-color;
+      text-transform: uppercase;
+      text-decoration: none;
+      position: relative;
+      padding-bottom: 20px;
+    }
+
+    a.active::before {
+      content: "";
+      position: absolute;
+      left: 7%;
+      bottom: 16px;
+      width: 150px;
+      height: 14px;
+      transform: skew(-12deg) translateX(-50%);
+      background: $light-blue;
+      z-index: -1;
+    }
   }
 
-  a {
-    display: block;
-    font-size: 14px;
-    font-weight: 700;
-    color: $text-color;
-    text-transform: uppercase;
-    text-decoration: none;
-    // padding: 6px 8px 6px 16px;
-    position: relative;
-    padding-bottom: 20px;
-
+  a:hover {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
   }
 
-  a.active::before {
-    content: "";
-    position: absolute;
-    left: 7%;
-    bottom: 16px;
-    width: 150px;
-    height: 14px;
-    transform: skew(-12deg) translateX(-50%);
-    background: $light-blue;
-    z-index: -1;
+  .socials {
+    display: flex;
+    margin-top: auto;
+    margin-bottom: 15px;
+    gap: 10px;
+    color: white;
   }
 
   @media (max-width: 950px) {
