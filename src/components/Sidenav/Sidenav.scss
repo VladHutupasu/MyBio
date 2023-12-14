@@ -1,15 +1,22 @@
 .sidenav {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 
   width: $sidenav-offset;
   background-color: $background-color;
   padding-left: 20px;
   position: fixed;
 
-  border-right: 2px dashed $light-blue;
-  border-bottom-right-radius: 15px;
-  border-top-right-radius: 15px;
+  .menu {
+    display: flex;
+    flex-direction: column;
+  }
+
+  > div:first-child {
+    border-right: 2px dashed $light-blue;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+  }
 
   left: 0;
   overflow-y: auto;
@@ -87,7 +94,169 @@
     color: white;
   }
 
+  .pacman-container {
+    width: 20px;
+  }
+
+  .pacman {
+    fill: yellow;
+    overflow: hidden;
+    position: absolute;
+    width: 52px;
+    height: 52px;
+
+    animation: pacmanwalk 10s infinite linear;
+    transform: scale(0.5);
+
+    svg {
+      width: 52px;
+      height: 52px;
+      display: block;
+      g {
+        transform: rotate(270deg);
+        transform-origin: 50% 50%;
+      }
+    }
+  }
+  .pacman__sprite {
+    width: 52px;
+    height: 156px;
+    animation-name: mouth;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+  }
+
   @media (max-width: 950px) {
     visibility: hidden;
+  }
+}
+
+// Animations
+// ----------------------------------------
+@keyframes mouth {
+  0% {
+    margin-top: 0;
+  }
+  25% {
+    margin-top: -52px;
+  }
+  50% {
+    margin-top: -104px;
+  }
+  75% {
+    margin-top: -52px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
+$right-offset: -8px;
+@keyframes pacmanwalk {
+  0% {
+    top: -30px;
+    right: $right-offset + 9px;
+    transform: scale(0.5) rotate(-35deg);
+  }
+
+  1% {
+    right: $right-offset + 6px;
+    transform: scale(0.5) rotate(-25deg);
+  }
+
+  2% {
+    right: $right-offset + 4px;
+    transform: scale(0.5) rotate(-15deg);
+  }
+
+  3% {
+    right: $right-offset;
+    transform: scale(0.5) rotate(-5deg);
+  }
+
+  10% {
+    right: $right-offset;
+    top: 10%;
+    transform: scale(0.5);
+  }
+
+  20% {
+    right: $right-offset;
+    top: 20%;
+    transform: scale(0.5);
+  }
+
+  30% {
+    right: $right-offset;
+    top: 30%;
+    transform: scale(0.5);
+  }
+
+  40% {
+    right: $right-offset;
+    top: 40%;
+    transform: scale(0.5);
+  }
+
+  50% {
+    right: $right-offset;
+    top: 50%;
+    transform: scale(0.5);
+  }
+
+  60% {
+    right: $right-offset;
+    top: 60%;
+    transform: scale(0.5);
+  }
+
+  70% {
+    right: $right-offset;
+    top: 70%;
+    transform: scale(0.5);
+  }
+
+  80% {
+    right: $right-offset;
+    top: 80%;
+    transform: scale(0.5);
+  }
+
+  90% {
+    right: $right-offset;
+    top: 90%;
+    transform: scale(0.5);
+  }
+
+  95% {
+    right: $right-offset;
+    top: 95%;
+    transform: scale(0.5) rotate(5deg);
+  }
+
+  97% {
+    right: $right-offset;
+    top: 97%;
+    transform: scale(0.5) rotate(15deg);
+  }
+
+  98% {
+    right: $right-offset + 4px;
+    top: 98%;
+    transform: scale(0.5) rotate(15deg);
+  }
+
+  99% {
+    right: $right-offset + 6px;
+    top: 99%;
+    transform: scale(0.5) rotate(35deg);
+  }
+
+  100% {
+    right: $right-offset + 9px;
+    top: 100%;
+    transform: scale(0.5) rotate(45deg);
   }
 }

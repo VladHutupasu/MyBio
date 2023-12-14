@@ -17,7 +17,7 @@ export default function FunFacts() {
           <div>
             <span style={{ fontSize: iconSize }}>🧳</span>
             <span className="fun-fact-number">26</span>
-            <span className="fun-fact-description">Countries visited</span>
+            <span className="fun-fact-description">Countries</span>
           </div>
           <div>
             <span style={{ fontSize: iconSize }}>🐱</span>
