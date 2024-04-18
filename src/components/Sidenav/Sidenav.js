@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { useLocation } from "react-router-dom";
 import FaceAvatar from "../FaceAvatar/FaceAvatar";
 import "./Sidenav.scss";
@@ -71,7 +71,7 @@ export default function Sidenav() {
     <div className="sidenav">
       <div className="menu">
         <FaceAvatar />
-        <div>
+        <div data-aos="zoom-y-out" data-aos-delay="150">
           <h2>Vlad Hutupasu</h2>
           <p>
             Full-Stack Area Developer&nbsp;
@@ -86,7 +86,12 @@ export default function Sidenav() {
           </p>
         </div>
 
-        <nav className="nav-items" ref={myRef}>
+        <nav
+          className="nav-items"
+          ref={myRef}
+          data-aos="fade-right"
+          data-aos-delay="150"
+        >
           {navItems.map((navItem) => {
             return (
               <a

@@ -1,8 +1,28 @@
-# CV website 💼
-Aimed for creating a landing page that served the purpose of a digital CV
+# 💼 CV Website
 
-# Deployment 🚀
+[MyBio](https://05011997.xyz) is a website aimed for creating a landing page serving the purpose of a digital CV.
 
-1. Build project `npm run build`
-2. Get auth token `firebase login:ci`
-3. Deploy `firebase deploy --token "${TOKEN_FETCHED_ABOVE}"`
+## 📦 Installation
+
+Before running the app, you need to install the necessary dependencies. Navigate to the directory containing the app in your terminal and run the following command:
+
+```bash
+npm install
+```
+
+## 🏃‍♀️ Running the App
+
+To run the app, navigate to the directory containing the app in your terminal and run the following command:
+
+```bash
+npm run start
+```
+
+## 🚀 Deployment
+
+```bash
+ firebase login:ci -> get $FIREBASE_TOKEN
+ npm version patch
+ ng build --prod
+ firebase deploy --token $FIREBASE_TOKEN
+```

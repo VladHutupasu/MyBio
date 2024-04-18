@@ -13,6 +13,8 @@ export default function FaceAvatar() {
         objectPosition: "top",
         borderRadius: "50%",
       }}
+      data-aos="zoom-y-out"
+      data-aos-delay="150"
     ></img>
   );
 }
