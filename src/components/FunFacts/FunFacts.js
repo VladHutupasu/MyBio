@@ -20,9 +20,9 @@ export default function FunFacts() {
             <span className="fun-fact-description">Countries</span>
           </div>
           <div data-aos="flip-left" data-aos-delay="150">
-            <span style={{ fontSize: iconSize }}>🐱</span>
-            <span className="fun-fact-number">1</span>
-            <span className="fun-fact-description">Pets</span>
+            <span style={{ fontSize: iconSize }}>🍳</span>
+            <span className="fun-fact-number">632</span>
+            <span className="fun-fact-description">Recipes cooked</span>
           </div>
         </section>
       </section>

@@ -49,7 +49,7 @@ export default function Experience() {
           </div>
           <div>
             <p data-aos="zoom-y-out" data-aos-delay="150">
-              <span>2017 - 2021 💼</span>
+              <span>2017 - 2021 📈</span>
               Full Stack Developer @{" "}
               <a
                 href="https://www.lynx.nl"
@@ -63,7 +63,7 @@ export default function Experience() {
           </div>
           <div>
             <p data-aos="zoom-y-out" data-aos-delay="150">
-              <span>💼 2021 - 2023</span>
+              <span>🏦 2021 - 2023</span>
               Front-end Developer @{" "}
               <a
                 href="https://www.rabobank.nl"
@@ -77,7 +77,7 @@ export default function Experience() {
           </div>
           <div>
             <p data-aos="zoom-y-out" data-aos-delay="150">
-              <span>2023 - ... 💼</span>
+              <span>2023 - 2024 🏦</span>
               Full-Stack Area Developer @{" "}
               <a
                 href="https://www.rabobank.nl"
@@ -86,6 +86,20 @@ export default function Experience() {
                 style={{ color: "#fa6705" }}
               >
                 Rabobank
+              </a>
+            </p>
+          </div>
+          <div>
+            <p data-aos="zoom-y-out" data-aos-delay="150">
+              <span>✈️ 2025 - ...</span>
+              Full-Stack Developer @{" "}
+              <a
+                href="https://flights.booking.com"
+                target="_blank"
+                rel="noreferrer"
+                style={{ color: "#006ce4" }}
+              >
+                Booking.com
               </a>
             </p>
           </div>

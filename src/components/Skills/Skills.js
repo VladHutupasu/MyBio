@@ -12,12 +12,20 @@ export default function Skills() {
         </h2>
         <Grid container spacing={4} data-aos="zoom-y-out" data-aos-delay="300">
           <Grid className="skill" item xs={6}>
-            <h3>JavaScript</h3>
-            <LinearProgress variant="determinate" value={80} />
+            <h3>React</h3>
+            <LinearProgress variant="determinate" value={95} />
+          </Grid>
+          <Grid className="skill" item xs={6}>
+            <h3>Angular</h3>
+            <LinearProgress variant="determinate" value={90} />
           </Grid>
           <Grid className="skill" item xs={6}>
             <h3>Typescript</h3>
-            <LinearProgress variant="determinate" value={85} />
+            <LinearProgress variant="determinate" value={95} />
+          </Grid>
+          <Grid className="skill" item xs={6}>
+            <h3>JavaScript</h3>
+            <LinearProgress variant="determinate" value={90} />
           </Grid>
           <Grid className="skill" item xs={6}>
             <h3>Java</h3>

@@ -21,8 +21,8 @@ export default function WelcomeSection() {
         </div>
 
         <p data-aos="zoom-y-out" data-aos-delay="300">
-          My name is Vlad and I am 27 years old. I am an ambitious &
-          hard-working individual who journeyed to The Netherlands 9 years ago
+          My name is Vlad and I am 29 years old. I am an ambitious &
+          hard-working individual who journeyed to The Netherlands 10 years ago
           to study Computer Science. Despite initial obstacles, I've forged my
           own path, embracing learning, growth, and seizing opportunities.
         </p>

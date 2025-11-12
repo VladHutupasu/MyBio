@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useLocation } from "react-router-dom";
 import FaceAvatar from "../FaceAvatar/FaceAvatar";
 import "./Sidenav.scss";
@@ -73,17 +73,12 @@ export default function Sidenav() {
         <FaceAvatar />
         <div data-aos="zoom-y-out" data-aos-delay="150">
           <h2>Vlad Hutupasu</h2>
-          <p>
-            Full-Stack Area Developer&nbsp;
-            <a
-              href="https://www.rabobank.nl"
-              target="_blank"
-              rel="noreferrer"
-              style={{ color: "#fa6705" }}
-            >
-              @Rabobank
-            </a>
-          </p>
+          <div>
+            Full-Stack Developer&nbsp;@&nbsp;
+            <span style={{ color: "#006ce4", fontWeight: 900 }}>
+              Booking.com
+            </span>
+          </div>
         </div>
 
         <nav
