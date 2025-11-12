@@ -7,7 +7,7 @@
 Before running the app, you need to install the necessary dependencies. Navigate to the directory containing the app in your terminal and run the following command:
 
 ```bash
-npm install
+pnpm install
 ```
 
 ## 🏃‍♀️ Running the App
@@ -15,14 +15,14 @@ npm install
 To run the app, navigate to the directory containing the app in your terminal and run the following command:
 
 ```bash
-npm run start
+pnpm start
 ```
 
 ## 🚀 Deployment
 
 ```bash
- firebase login:ci -> get $FIREBASE_TOKEN
- npm version patch
- ng build --prod
- firebase deploy --token $FIREBASE_TOKEN
+ pnpm firebase login:ci -> get $FIREBASE_TOKEN
+ pnpm version patch
+ pnpm build --prod
+ pnpm firebase deploy --token $FIREBASE_TOKEN
 ```
